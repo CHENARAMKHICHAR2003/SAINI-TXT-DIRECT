@@ -604,7 +604,7 @@ async def txt_handler(bot: Client, m: Message):
                                f"╰━✦𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ [CR 𝘽𝙊𝙏𝙎🐦](https://t.me/+MdZ2996M2G43MWFl)"
                     prog = await m.reply_text(Show, disable_web_page_preview=True)
                     res_file = await helper.download_and_decrypt_video(url, cmd, name, appxkey)  
-          filename = res_file  
+                    filename = res_file  
                     await prog.delete(True)  
                     await emoji_message.delete()
                     await helper.send_vid(bot, m, cc, filename, thumb, name, prog)  
